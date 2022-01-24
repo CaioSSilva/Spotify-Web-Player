@@ -152,6 +152,9 @@ hr{
 }
 .content-buttons-2 button:hover{
     background: black;
+}
+.content-buttons-2 button{
+    cursor: pointer;
 }    
 .button-upgrade{
     width: 130px;
@@ -233,6 +236,9 @@ hr{
 }
 .div-play > div{
     flex: 1 1 300px;
+}
+.div-play button{
+    cursor: pointer;
 }
 .botão-play{
     margin-right: 20px;
@@ -402,6 +408,7 @@ hr{
     display: flex;
 }
 .mp-p2{
+    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -439,14 +446,13 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-}    
+}   
 .div-bb{
     height: 100px;
     width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;;
-    margin-left: 60px;
 }
 .barra{
     align-items: center;
@@ -474,7 +480,12 @@ progress{
     margin-left: 15px;
     margin-right: 15px;
 }
-.seta{
+.anterior{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.proxima{
     width: 15px;
     height: 15px;
     cursor: pointer;
@@ -484,4 +495,6 @@ progress{
     width: 30px;
     height: 30px;
     cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
 }
