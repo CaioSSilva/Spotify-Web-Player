@@ -525,6 +525,12 @@ progress{
         min-width: 50px;
         overflow-y: auto;
     }
+    .nome-musica{
+        font-size: 15px;
+    }
+    .foto-capa{
+        width: 70px;
+    }
     .music-player{
         position: relative;
         width:  "";
@@ -544,25 +550,25 @@ progress{
     }
     .div-bb{
         width: fit-content;
-        margin-right: 10px;
+        margin-right: 20px;
     }
     .setinha{
         width: 5%;
     }
     .anterior{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
     .proxima{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
     .play{
-        height: 50px;
-        width: 50px;
+        height: 35px;
+        width: 35px;
     }
     .pause{
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
     }
 }
