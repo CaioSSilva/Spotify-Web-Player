@@ -498,3 +498,67 @@ progress{
     margin-left: 15px;
     margin-right: 15px;
 }
+@media screen and (max-width:600px) {
+    .sec-menu{
+        display: none;
+        width: auto;
+    }
+    .sec-content{
+        height: auto;
+    }
+    .foto-capa{
+        margin-left: 0;
+    }
+    .content-buttons{
+        display: none;
+    }
+    .button-upgrade{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .div-play{
+        flex-wrap: wrap;
+        min-width: 50px;
+        overflow-y: auto;
+    }
+    .music-player{
+        position: relative;
+        width:  "";
+        height: fit-content;
+        justify-content: space-between;
+    }
+    .botoes-player{
+        width: fit-content;
+        margin-bottom: 0;
+    }
+    .mp-p2{
+        width: auto;
+        margin-left: 0;
+    }
+    .duracao{
+        display: none;
+    }
+    .div-bb{
+        width: fit-content;
+        margin-right: 10px;
+    }
+    .setinha{
+        width: 5%;
+    }
+    .anterior{
+        width: 30px;
+        height: 30px;
+    }
+    .proxima{
+        width: 30px;
+        height: 30px;
+    }
+    .play{
+        height: 50px;
+        width: 50px;
+    }
+    .pause{
+        width: 50px;
+        height: 50px;
+    }
+}
