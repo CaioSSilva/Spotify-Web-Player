@@ -499,6 +499,10 @@ progress{
     margin-right: 15px;
 }
 @media screen and (max-width:600px) {
+    .div-dia h2{
+        margin-left: 0;
+        text-align: center;
+    }
     .sec-menu{
         display: none;
         width: auto;
