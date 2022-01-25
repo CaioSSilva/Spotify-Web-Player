@@ -530,6 +530,7 @@ progress{
     }
     .foto-capa{
         width: 70px;
+        height: 70px;
     }
     .music-player{
         position: relative;
