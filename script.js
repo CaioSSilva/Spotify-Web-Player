@@ -37,6 +37,7 @@ document.querySelector('.anterior').addEventListener('click', () => {
         indexMusica = 10;
     }
     renderizarMusica(indexMusica);
+    tocarMusica()
 });
 
 document.querySelector('.proxima').addEventListener('click', () => {
@@ -45,6 +46,7 @@ document.querySelector('.proxima').addEventListener('click', () => {
         indexMusica = 0;
     }
     renderizarMusica(indexMusica);
+    tocarMusica()
 });
 
 // Funções
