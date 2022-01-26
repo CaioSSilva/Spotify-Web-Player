@@ -25,7 +25,7 @@ renderizarMusica(indexMusica);
 // Eventos
 document.querySelector('.play').addEventListener('click', tocarMusica);
 
-document.querySelector('.botão-play').addEventListener('click', tocarMusica);
+document.querySelector('.botão-jao').addEventListener('click', tocarMusica);
 
 document.querySelector('.pause').addEventListener('click', pausarMusica);
 
@@ -89,3 +89,8 @@ function segundosParaMinutos(segundos){
     return campoMinutos+':'+campoSegundos;
 }
 
+function trocarMusicaBillie(){
+    if(document.querySelector('')){
+
+    }
+}

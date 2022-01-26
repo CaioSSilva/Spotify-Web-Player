@@ -238,24 +238,104 @@ hr{
 .div-play button{
     cursor: pointer;
 }
-.botão-play{
+.botão-yr{
     margin-right: 20px;
     display: block;
     width: 40px;
     background: 0;
     border: 0;
 }
-.botão-play img{
+.botão-yr img{
     display: flex;
     align-self: center;
     justify-self: center;
     width: 40px;
 }
+.botão-yr img:hover{
+    width: 105%;
+}
+.botão-jao{
+    margin-right: 20px;
+    display: block;
+    width: 40px;
+    background: 0;
+    border: 0;
+}
+.botão-jao img{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 40px;
+}
+.botão-jao img:hover{
+    width: 105%;
+}
+.botão-billie{
+    margin-right: 20px;
+    display: block;
+    width: 40px;
+    background: 0;
+    border: 0;
+}
+.botão-billie img{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 40px;
+}
+.botão-billie img:hover{
+    width: 105%;
+}
+.botão-lil{
+    margin-right: 20px;
+    display: block;
+    width: 40px;
+    background: 0;
+    border: 0;
+}
+.botão-lil img{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 40px;
+}
+.botão-lil img:hover{
+    width: 105%;
+}
+.botão-pablo{
+    margin-right: 20px;
+    display: block;
+    width: 40px;
+    background: 0;
+    border: 0;
+}
+.botão-pablo img{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 40px;
+}
+.botão-pablo img:hover{
+    width: 105%;
+}
+.botão-manu{
+    margin-right: 20px;
+    display: block;
+    width: 40px;
+    background: 0;
+    border: 0;
+}
+.botão-manu img{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 40px;
+}
+.botão-manu img:hover{
+    width: 105%;
+}
 .div-1:hover{
     background-color: rgba(255, 255, 255, 0.350);
-}
-.botão-play img:hover{
-    width: 105%;
 }
 .div-2{
     justify-content: space-between;
