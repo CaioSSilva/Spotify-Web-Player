@@ -11,10 +11,7 @@ ul li{
     list-style: none;
 }
 a{
-    text-decoration: none;
-    color: #b3b3b3;
-    font-size: 14px;
-    font-weight: 900;
+    
 }
 .sec-menu{
     width: 20%;
@@ -61,6 +58,9 @@ a{
     margin-bottom: 30px;
 }
 .ul-1 a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 14px;
     margin-left: 15px;
 }
 .ul-2 li {
@@ -74,6 +74,9 @@ a{
     width: 20px;
 }
 .ul-2 a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 14px;
     margin-left: 15px;
 }
 .playlists-roll{
@@ -108,9 +111,9 @@ li{
 .div-button{
     justify-content: space-between;
     display: flex;
-    align-items: center;
     height: 40px;
     background-color: #0B7F9B;
+    align-items: center;
 }
 .button-esquerdo{
     margin-top: 10px;
@@ -138,12 +141,21 @@ li{
     border-radius: 50%;
     background-color: #0000009d;
 }
-.button-direito img {
-    
+.button-direito a > img {
     width: 50%;
 }
-.button-esquerdo img {
+.button-esquerdo a > img {
     width: 50%;
+}
+.button-direito a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.button-esquerdo a {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 .buttons-p2{
     align-items: center;
@@ -166,14 +178,60 @@ li{
     border-radius: 20px;
     background: #0000009d;
 }
+.button-upgrade a{
+    text-decoration: none;
+    color: #b3b3b3;
+    color: white;
+}
 .button-conta{
     margin-right: 30px;
     margin-top: 10px;
     border-radius: 15px;
     border: none;
     display: flex;
+    justify-self: center;
+    align-self: center;
     align-items: center;
     background: #0000009d;
+}
+.menu-conta{
+    font-size: 10px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    color: #b3b3b3;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3px;
+    margin-right: 30px;
+    background: #0000009d;
+}
+.menu-conta a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.conta-inicio{
+    margin-top: 5px;
+}
+.menu-conta > .conta-biblio{
+    display: none;
+}
+.config{
+    margin-bottom: 5px;
+}
+
+.menu-conta a:hover{
+
+    border-radius: 10px ;
+    background: black;
+    color: white;
 }
 .button-esquerdo:hover, .button-direito:hover, .button-upgrade:hover, .button-conta:hover{
     cursor: pointer;
@@ -365,30 +423,33 @@ li{
 .foto-capa{
     margin-left: 30px;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
     width:60px;
     height: 60px;
 }
 .duracao{
     display: flex;
-    flex-direction: column;
-    
     align-content: center;
+    align-items: center;
 }
 .barra{
     display: flex;
 }   
-.tempo{
-    margin-top: 5px;
-    justify-content: space-between;
+.inicio {
+    width: 30px;
+    margin-right: 10px;
+    display: flex;
+    color: white;
+}
+.fim{
+    width: 30px;
+    margin-left: 10px;
     display: flex;
     color: white;
 }
 .botoes-player{
-    margin-bottom: 1%;
-    width: 500px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
 }   
 .div-bb{
@@ -407,8 +468,6 @@ li{
 }
 progress{
     border-radius: 30px;
-    background: white;
-    width: 0;
     height: 4px;
 }
 .ponto{
@@ -449,9 +508,18 @@ progress{
 .list-musicas > ul:hover{
     background-color: #f8f8f83a ;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:1100px) {
 .sec-menu{
     display: none;
+}
+.menu-conta > .conta-biblio{
+    display: block;
+}
+.menu-conta{
+    margin-right: 5px;
+}
+.foto-capa{
+    padding: 10px;
 }
 .content-2 p{
     font-size: 13px;
@@ -478,7 +546,7 @@ progress{
     font-size: 45px;
 }
 .music-player{
-    position: relative;
+    position: fixed;
     width:  100vw;
     height: fit-content;
     justify-content: space-between;
