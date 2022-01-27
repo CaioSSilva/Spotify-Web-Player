@@ -419,6 +419,9 @@ li{
     font-size: 15px;
     color: #cccccc;
 }
+.nome-musica{
+    font-size: 20px;
+}
 .foto-capa{
     margin-left: 30px;
     border-radius: 20px;
@@ -513,6 +516,9 @@ progress{
 }
 .menu-conta > .conta-biblio{
     display: block;
+}
+.nome-musica{
+    font-size: 18px;
 }
 .menu-conta{
     margin-right: 5px;
