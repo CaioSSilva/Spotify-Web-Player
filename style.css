@@ -17,13 +17,11 @@ a{
     font-weight: 900;
 }
 .sec-menu{
-    height: 100vh;
     width: 350px;
     display: flex;
     flex-direction: column;
     background: black;}
 .div-menu{
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -80,11 +78,12 @@ a{
 }
 .playlists-roll{
     overflow-y:scroll;
+    height: 150px;
     padding-left: 15px;
 }
 .playlists-roll ul{
     margin-left: 15px;
-    height: 105%;
+    height: 150%;
 }
 .playlists-roll ul > li:hover{
     color: white;
@@ -103,7 +102,11 @@ li{
     width: 80%;
     align-self: center;
 }
+.sec-content{
+    width: 100vw;
+}
 .div-button{
+    justify-content: space-between;
     display: flex;
     align-items: center;
     height: 40px;
@@ -147,9 +150,9 @@ li{
     display: flex;
 }
 .button-upgrade{
+    
+    justify-self: center;
     margin-top: 10px;
-    margin-right: 100px;
-    margin-left: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,6 +167,7 @@ li{
     background: #0000009d;
 }
 .button-conta{
+    margin-right: 30px;
     margin-top: 10px;
     border-radius: 15px;
     border: none;
@@ -234,11 +238,6 @@ li{
 .background-2{
     background-color: #181818
 }
-.div-list{
-    height: 184px;
-    overflow-y:scroll;
-    
-}
 .like-more{
     display: flex;
     gap: 20px;
@@ -259,11 +258,21 @@ li{
     border: none;
 }
 .botao-play{
-    width: 200%;
+    width: 60px;
+}
+.botao-pause{
+    width: 60px;
+    display: none;
+    background: transparent;
+}
+
+.botao-pause:hover{
+    width: 65px;
+    cursor: pointer;
 }
 .botao-play:hover{
+    width: 65px;
     cursor: pointer;
-    width: 220%;
 }
 .more{
     color: #b3b3b3;
@@ -279,10 +288,11 @@ li{
     color: #b3b3b3;
     margin-top: 20px;
     margin-left: 30px;
+    padding-bottom: 20px;
     justify-content: space-between;
 }
 .list-titulo img{
-    margin-right: 95px;
+    margin-right: 80px;
     width: 16px;
     height: 16px;
 }
@@ -323,6 +333,8 @@ li{
     font-size: 13px;
 }
 .list-tempo{
+    align-items: center;
+    justify-content: center;
     margin-top: 15px;
     margin-right: 20px;
     font-size: 10px;
@@ -330,7 +342,6 @@ li{
 .music-player{
     position:fixed;
     bottom: 0;
-    height: 70px;
     width: 100vw;
     display: flex;
     background-color: black;
@@ -338,13 +349,13 @@ li{
 .mp-p1{
     display: flex;
     align-items: center;
+    margin-right: 120px;
 }
 .mp-p2{
-    width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 1opx;
+    margin-left: 10px;
     color: white;
 }
 .nome-artista{
@@ -381,10 +392,10 @@ li{
     align-items: center;
 }   
 .div-bb{
-    width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;;
+    justify-content: center;
+    align-self: center;
 }
 .barra{
     align-items: center;
@@ -437,47 +448,58 @@ progress{
 .list-musicas > ul:hover{
     background-color: #f8f8f83a ;
 }
-@media screen and (max-width:600px) {
-    
-
-    .music-player{
-        position: relative;
-        width:  "";
-        height: fit-content;
-        justify-content: space-between;
-    }
-    .botoes-player{
-        width: fit-content;
-        margin-bottom: 0;
-    }
-    .mp-p2{
-        width: auto;
-        margin-left: 0;
-    }
-    .duracao{
-        display: none;
-    }
-    .div-bb{
-        width: fit-content;
-        margin-right: 20px;
-    }
-    .setinha{
-        width: 5%;
-    }
-    .anterior{
-        width: 25px;
-        height: 25px;
-    }
-    .proxima{
-        width: 25px;
-        height: 25px;
-    }
-    .play{
-        height: 35px;
-        width: 35px;
-    }
-    .pause{
-        width: 35px;
-        height: 35px;
-    }
+@media screen and (max-width:800px) {
+.sec-menu{
+    display: none;
+}
+.capa{
+    width: 150px;
+    height: 150px;
+}
+.capa-menor{
+    display: none;
+}
+.content > h1{
+    font-size: 50px;
+}
+.music-player{
+    position: relative;
+    width:  "";
+    height: fit-content;
+    justify-content: space-between;
+}
+.botoes-player{
+    width: fit-content;
+    margin-bottom: 0;
+}
+.mp-p2{
+    width: auto;
+    margin-left: 0;
+}
+.duracao{
+    display: none;
+}
+.div-bb{
+    width: fit-content;
+    margin-right: 20px;
+}
+.setinha{
+    width: 5%;
+}
+.anterior{
+    width: 25px;
+    height: 25px;
+}
+.proxima{
+    width: 25px;
+    height: 25px;
+}
+.play{
+    height: 35px;
+    width: 35px;
+}
+.pause{
+    width: 35px;
+    height: 35px;
+}
 }

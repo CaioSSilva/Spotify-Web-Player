@@ -23,11 +23,13 @@ let nomeArtista = document.querySelector('.nome-artista');
 renderizarMusica(indexMusica);
 
 // Eventos
-document.querySelector('.play').addEventListener('click', tocarMusica);
+document.querySelector('.play').addEventListener('click', tocarMusica, tocarMusica);
 
 document.querySelector('.botao-play').addEventListener('click', tocarMusica);
 
 document.querySelector('.pause').addEventListener('click', pausarMusica);
+
+document.querySelector('.botao-pause').addEventListener('click', pausarMusica);
 
 musica.addEventListener('timeupdate', atualizarBarra);
 
@@ -59,18 +61,32 @@ function renderizarMusica(index){
         duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
     });
 }
+function tocarMusica2(){
+    musica.play();
+    document.querySelector('.botao-pause').style.display = 'block';
+    document.querySelector('.botao-play').style.display = 'none';
+    
+}
 
+function pausarMusica2(){
+    musica.pause();
+    document.querySelector('.botao-pause').style.display = 'none';
+    document.querySelector('.botao-play').style.display = 'block';
+}
 function tocarMusica(){
     musica.play();
     document.querySelector('.pause').style.display = 'block';
     document.querySelector('.play').style.display = 'none';
+    tocarMusica2()
 }
 
 function pausarMusica(){
     musica.pause();
     document.querySelector('.pause').style.display = 'none';
     document.querySelector('.play').style.display = 'block';
+    pausarMusica2()
 }
+
 
 function atualizarBarra(){
     let barra = document.querySelector('progress');
