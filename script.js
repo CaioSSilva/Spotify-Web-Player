@@ -1,15 +1,15 @@
 let musicas = [
-    {titulo:'Clarão', artista:'Jão', src:'musicas/Clarão.mp3', img:'image-content/CAPA-JAO.png'},
-    {titulo:'Não Te Amo', artista:'Jão', src:'musicas/Não Te Amo.mp3', img:'image-content/CAPA-JAO.png'},
-    {titulo:'Idiota', artista:'Jão', src:'musicas/Idiota.mp3', img:'image-content/CAPA-JAO.png'},
-    {titulo:'Santo', artista:'Jão', src:'musicas/Santo.mp3', img:'image-content/CAPA-JAO.png'},
-    {titulo:'Acontece', artista:'Jão', src:'musicas/Acontece.mp3', img:'image-content/CAPA-JAO.png'},
-    {titulo:'Você Me Perdeu', artista:'Jão', src:'musicas/Você Me Perdeu.mp3', img:'image-content/CAPA-JAO.png'},
-    {titulo:'Meninos e Meninas', artista:'Jão', src:'musicas/Meninos e Meninas.mp3', img:'image-content/CAPA-JAO.png'},
-    {titulo:'Coringa', artista:'Jão', src:'musicas/Coringa.mp3', img:'image-content/CAPA-JAO.png'},
-    {titulo:'Doce', artista:'Jão', src:'musicas/Doce.mp3', img:'image-content/CAPA-JAO.png'},
-    {titulo:'Tempos de Glória', artista:'Jão', src:'musicas/Tempos de Glória.mp3', img:'image-content/CAPA-JAO.png'},
-    {titulo:'Olhos Vermelhos', artista:'Jão', src:'musicas/Olhos Vermelhos.mp3', img:'image-content/CAPA-JAO.png'},
+    {titulo:'Clarão', artista:'Jão', src:'musicas/Clarão.mp3', img:'image-content/JAO-CAPA.jpg'},
+    {titulo:'Não Te Amo', artista:'Jão', src:'musicas/Não Te Amo.mp3', img:'image-content/JAO-CAPA.jpg'},
+    {titulo:'Idiota', artista:'Jão', src:'musicas/Idiota.mp3', img:'image-content/JAO-CAPA.jpg'},
+    {titulo:'Santo', artista:'Jão', src:'musicas/Santo.mp3', img:'image-content/JAO-CAPA.jpg'},
+    {titulo:'Acontece', artista:'Jão', src:'musicas/Acontece.mp3', img:'image-content/JAO-CAPA.jpg'},
+    {titulo:'Você Me Perdeu', artista:'Jão', src:'musicas/Você Me Perdeu.mp3', img:'image-content/JAO-CAPA.jpg'},
+    {titulo:'Meninos e Meninas', artista:'Jão', src:'musicas/Meninos e Meninas.mp3', img:'image-content/JAO-CAPA.jpg'},
+    {titulo:'Coringa', artista:'Jão', src:'musicas/Coringa.mp3', img:'image-content/JAO-CAPA.jpg'},
+    {titulo:'Doce', artista:'Jão', src:'musicas/Doce.mp3', img:'image-content/JAO-CAPA.jpg'},
+    {titulo:'Tempos de Glória', artista:'Jão', src:'musicas/Tempos de Glória.mp3', img:'image-content/JAO-CAPA.jpg'},
+    {titulo:'Olhos Vermelhos', artista:'Jão', src:'musicas/Olhos Vermelhos.mp3', img:'image-content/JAO-CAPA.jpg'},
 ];
 
 let musica = document.querySelector('audio');
@@ -25,7 +25,7 @@ renderizarMusica(indexMusica);
 // Eventos
 document.querySelector('.play').addEventListener('click', tocarMusica);
 
-document.querySelector('.botão-jao').addEventListener('click', tocarMusica);
+document.querySelector('.botao-play').addEventListener('click', tocarMusica);
 
 document.querySelector('.pause').addEventListener('click', pausarMusica);
 
@@ -87,10 +87,4 @@ function segundosParaMinutos(segundos){
     }
 
     return campoMinutos+':'+campoSegundos;
-}
-
-function trocarMusicaBillie(){
-    if(document.querySelector('')){
-
-    }
 }

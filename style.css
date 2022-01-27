@@ -12,14 +12,16 @@ ul li{
 }
 a{
     text-decoration: none;
-    color: #cccccc;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 900;
 }
 .sec-menu{
     height: 100vh;
+    width: 350px;
     display: flex;
     flex-direction: column;
-    background: black;
-}
+    background: black;}
 .div-menu{
     height: 100vh;
     display: flex;
@@ -54,7 +56,9 @@ a{
     width: 20px;
 }
 .ul-1{
-    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 900;
+    margin-right: 20px;
     margin-left: 30px;
     margin-bottom: 30px;
 }
@@ -75,12 +79,15 @@ a{
     margin-left: 15px;
 }
 .playlists-roll{
-    height: 100%;
     overflow-y:scroll;
     padding-left: 15px;
 }
 .playlists-roll ul{
+    margin-left: 15px;
     height: 105%;
+}
+.playlists-roll ul > li:hover{
+    color: white;
 }
 li:hover{
     color: white;
@@ -89,408 +96,255 @@ li:hover{
 li{
     color: #cbcbcb;
 }
-hr{
+.hr-menu{
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
     width: 80%;
     align-self: center;
 }
-.sec-content{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(rgba(22, 22, 83, 0.904),rgb(19, 19, 19));
-    backdrop-filter: blur(10px);
-}
-.div-buttons{
-    height: min-content;
-    margin-top: 30px;
+.div-button{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    height: 40px;
+    background-color: #0B7F9B;
 }
-.content-buttons{
+.button-esquerdo{
+    margin-top: 10px;
     display: flex;
-    align-items: center;
-}
-.content-buttons button{
-    width: 32px;
-    height: 32px;
-}
-.content-buttons img{
-    width: 40%;
-}
-.seta-esquerda{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin-left: 50px;
-    margin-right: 20px;
-    background: #000000b3;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-.seta-direita{
-    display: flex;
     align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #0000009d;
+}
+.button-direito{
+    margin-top: 10px;
+    display: flex;
     justify-content: center;
-    background: #000000b3;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}    
-.content-buttons-2{
-    display: flex;
     align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #0000009d;
 }
-.content-buttons button:hover{
-    background: black;
+.button-direito img {
+    
+    width: 50%;
 }
-.content-buttons-2 button:hover{
-    background: black;
+.button-esquerdo img {
+    width: 50%;
 }
-.content-buttons-2 button{
-    cursor: pointer;
-}    
+.buttons-p2{
+    align-items: center;
+    display: flex;
+}
 .button-upgrade{
-    width: 130px;
-    height: 36px;
-    color: white;
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
     font-weight: 700;
-    background: #000000b3;
-    border-radius: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
     border: 1px white solid;
-    padding: 10px;
-    margin-right: 200px;
+    border-radius: 20px;
+    background: #0000009d;
 }
 .button-conta{
-    padding: 3px;
-    width: 200px;
-    height: 36px;
-    display: flex;
-    color: white;
-    font-weight: 700;
-    background: #000000b3;
+    margin-top: 10px;
+    border-radius: 15px;
     border: none;
-    border-radius: 20px;
-    margin-right: 10px;
-}
-.imagem-conta{
     height: 30px;
-    width: 30px;
-    border-radius: 20px;
-}
-.username{
-    align-self: center;
-    font-size: 15px;
-    font-weight: 700;
-    margin-left: 10px;
-}
-.setinha{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    width: 0.7vw;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.div-dia h2{
-    margin-top: 20px;
-    margin-left: 50px;
-    color: white;
-    font-weight: 700;
-}
-.div-1{
-    justify-content: space-between;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.200);
-    border-radius: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    height: 80px;
-    width: 300px;
-    content: "";
-}
-.jão-capa{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px ;
-}
-.div-1 h3{
-    text-align: center;
     display: flex;
     align-items: center;
+    background: #0000009d;
+}
+.button-esquerdo:hover, .button-direito:hover, .button-upgrade:hover, .button-conta:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.me{
+    border-radius: 50%;
+    margin: 3px;
+    width: 24px;
+    margin-right: 10px;
+}
+.button-conta h3{
+    color: white;
+    margin-right: 10px;
+}
+.seta-baixo{
+    width: 10px;
+    margin-right: 10px;
+}
+.div-list-top{
+    display: flex;
+    background-color: #0B7F9B;
+}
+.capa{
+    margin:30px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 3px 100px 5px black ;
+}
+.content{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     color: white;
 }
-.div-play{
+.content h4 {
+    font-size: 12px;
+}
+.content h1{
+    font-size: 80px;
+    font-weight: 1000;
+}
+.content-2{
+    display: flex;
+}
+.capa-menor{
+    border-radius: 50%;
+    width: 2%;
+    margin-right: 10px;
+}
+.jao{
+    margin-right: 10px;
+    font-weight: 600;
+}
+.info{
+    margin-left: 10px;
+}
+.background{
+    background-image: linear-gradient(#07343F, #181818);
+}
+.background-2{
+    background-color: #181818
+}
+.div-list{
+    height: 184px;
+    overflow-y:scroll;
+    
+}
+.like-more{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 30px;
+    
+}
+.like-more button{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+}
+.botao-play{
+    width: 200%;
+}
+.botao-play:hover{
+    cursor: pointer;
+    width: 220%;
+}
+.more{
+    color: #b3b3b3;
+    font-size: 15px;
+}
+.more:hover{
+    cursor: pointer;
+    color: white ;
+}
+.list-titulo{
+    display: flex;
+    font-size: 9px;
+    color: #b3b3b3;
+    margin-top: 20px;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+.list-titulo img{
+    margin-right: 95px;
+    width: 16px;
+    height: 16px;
+}
+.list-titulo > div{
+    display: flex;
+}
+.asterisco{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.list-musicas li {
+    padding-bottom: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 1050px;
-}
-.div-play > div{
-    flex: 1 1 300px;
-}
-.div-play button{
-    cursor: pointer;
-}
-.botão-yr{
-    margin-right: 20px;
-    display: block;
-    width: 40px;
-    background: 0;
-    border: 0;
-}
-.botão-yr img{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 40px;
-}
-.botão-yr img:hover{
-    width: 105%;
-}
-.botão-jao{
-    margin-right: 20px;
-    display: block;
-    width: 40px;
-    background: 0;
-    border: 0;
-}
-.botão-jao img{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 40px;
-}
-.botão-jao img:hover{
-    width: 105%;
-}
-.botão-billie{
-    margin-right: 20px;
-    display: block;
-    width: 40px;
-    background: 0;
-    border: 0;
-}
-.botão-billie img{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 40px;
-}
-.botão-billie img:hover{
-    width: 105%;
-}
-.botão-lil{
-    margin-right: 20px;
-    display: block;
-    width: 40px;
-    background: 0;
-    border: 0;
-}
-.botão-lil img{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 40px;
-}
-.botão-lil img:hover{
-    width: 105%;
-}
-.botão-pablo{
-    margin-right: 20px;
-    display: block;
-    width: 40px;
-    background: 0;
-    border: 0;
-}
-.botão-pablo img{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 40px;
-}
-.botão-pablo img:hover{
-    width: 105%;
-}
-.botão-manu{
-    margin-right: 20px;
-    display: block;
-    width: 40px;
-    background: 0;
-    border: 0;
-}
-.botão-manu img{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 40px;
-}
-.botão-manu img:hover{
-    width: 105%;
-}
-.div-1:hover{
-    background-color: rgba(255, 255, 255, 0.350);
-}
-.div-2{
     justify-content: space-between;
+}
+.list-info{
     display: flex;
-    background-color: rgba(255, 255, 255, 0.200);
-    border-radius: 20px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-    margin-right: 50px;
-    margin-top: 20px;
-    height: 80px;
-    width: 300px;
-    content: "";
 }
-.billie-capa{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px ;
+.list-info > div {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
-.div-2 h3{
+.list-numero{
     font-size: 15px;
-    text-align: center;
     display: flex;
     align-items: center;
-    color: white;
 }
-.div-2:hover{
-    background-color: rgba(255, 255, 255, 0.350);
-}
-.div-3{
-    justify-content: space-between;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.200);
-    border-radius: 20px;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-right: 50px;
-    height: 80px;
-    width: 300px;
-    content: "";
-}
-.lil-capa{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px ;
-}
-.div-3 h3{
+.list-musica-titulo{
     font-size: 15px;
-    text-align: center;
-    display: flex;
-    align-items: center;
     color: white;
 }
-.div-3:hover{
-    background-color: rgba(255, 255, 255, 0.350);
+.list-artista{
+    font-size: 13px;
 }
-.div-4{
-    justify-content: space-between;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.200);
-    border-radius: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    height: 80px;
-    width: 300px;
-    content: "";
+.list-tempo{
+    margin-top: 15px;
+    margin-right: 20px;
+    font-size: 10px;
 }
-.pablo-capa{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px ;
-}
-.div-4 h3{
-    font-size: 15px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-.div-4:hover{
-    background-color: rgba(255, 255, 255, 0.350);
-}
-.div-5{
-    justify-content: space-between;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.200);
-    border-radius: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    height: 80px;
-    width: 300px;
-    content: "";
-}
-.manu-capa{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px ;
-}
-.div-5 h3{
-    font-size: 15px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-.div-5:hover{
-    background-color: rgba(255, 255, 255, 0.350);
-}
-.div-6{
-    justify-content: space-between;
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.200);
-    border-radius: 20px;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-right: 50px;
-    height: 80px;
-    width: 300px;
-    content: "";
-}
-.yr-capa{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px ;
-}
-.div-6 h3{
-    font-size: 15px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-.div-6:hover{
-    background-color: rgba(255, 255, 255, 0.350)
-}
-
 .music-player{
-    display: flex;
-    width: 100%;
-    position: absolute;
+    position:fixed;
     bottom: 0;
+    height: 70px;
+    width: 100vw;
     display: flex;
-    height: 100px;
     background-color: black;
 }
 .mp-p1{
     display: flex;
+    align-items: center;
 }
 .mp-p2{
     width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 15px;
+    margin-left: 1opx;
     color: white;
 }
 .nome-artista{
@@ -498,10 +352,11 @@ hr{
     color: #cccccc;
 }
 .foto-capa{
-    margin-left: 50px;
+    margin-left: 30px;
     border-radius: 20px;
     padding: 10px;
-    width:80px;
+    width:60px;
+    height: 60px;
 }
 .duracao{
     display: flex;
@@ -519,14 +374,13 @@ hr{
     color: white;
 }
 .botoes-player{
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }   
 .div-bb{
-    height: 100px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -557,16 +411,19 @@ progress{
     cursor: pointer;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 10px;
 }
 .anterior{
     width: 15px;
     height: 15px;
     cursor: pointer;
+    margin-top: 10px;
 }
 .proxima{
     width: 15px;
     height: 15px;
     cursor: pointer;
+    margin-top: 10px;
 }
 .pause{
     display: none;
@@ -575,41 +432,14 @@ progress{
     cursor: pointer;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 10px;
+}
+.list-musicas > ul:hover{
+    background-color: #f8f8f83a ;
 }
 @media screen and (max-width:600px) {
-    .div-dia h2{
-        margin-left: 0;
-        text-align: center;
-    }
-    .sec-menu{
-        display: none;
-        width: auto;
-    }
-    .sec-content{
-        height: auto;
-    }
-    .foto-capa{
-        margin-left: 0;
-    }
-    .content-buttons{
-        display: none;
-    }
-    .button-upgrade{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .div-play{
-        flex-wrap: wrap;
-        min-width: 50px;
-        overflow-y: auto;
-    }
-    .nome-musica{
-        font-size: 15px;
-    }
-    .foto-capa{
-        width: 70px;
-        height: 70px;
-    }
+    
+
     .music-player{
         position: relative;
         width:  "";
