@@ -519,6 +519,7 @@ progress{
 }
 .foto-capa{
     padding: 10px;
+    margin-left: 0px;
 }
 .content-2 p{
     font-size: 13px;
@@ -531,7 +532,7 @@ progress{
     margin-right: 5px;
 }
 .mp-p1{
-    margin-right: 10%;
+    margin-right: 10px;
 }
 .capa{
     width: 150px;
@@ -562,7 +563,7 @@ progress{
     display: none;
 }
 .div-bb{
-    margin-right: 10px;
+    padding-right: 10px;
 }
 .setinha{
     width: 5%;
