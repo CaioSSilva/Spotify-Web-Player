@@ -85,15 +85,12 @@ ul li{
     margin-left: 15px;
     height: 150%;
 }
+.playlists-roll ul > li{
+    color: #cbcbcb;
+}
 .playlists-roll ul > li:hover{
     color: white;
-}
-li:hover{
-    color: white;
     cursor: pointer;
-}
-li{
-    color: #cbcbcb;
 }
 .hr-menu{
     margin-top: 30px;
@@ -381,7 +378,6 @@ li{
 }
 .list-musica-titulo{
     font-size: 15px;
-    color: white;
 }
 .list-artista{
     font-size: 13px;
@@ -393,6 +389,12 @@ li{
     margin-right: 20px;
     font-size: 10px;
 }
+.list-musicas ul{
+    cursor: pointer;
+}
+.list-musicas ul{
+    color: white;
+} 
 .music-player{
     justify-content: space-between;
     position:fixed;

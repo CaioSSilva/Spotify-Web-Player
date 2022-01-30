@@ -120,5 +120,113 @@ function verificarBotão(){
     }    
 }
 
-
-
+function clarão(index){
+    musica.setAttribute('src', musicas[0].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[0].titulo;
+        nomeArtista.textContent = musicas[0].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
+function naoTeAmo(index){
+    musica.setAttribute('src', musicas[1].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[1].titulo;
+        nomeArtista.textContent = musicas[1].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
+function idiota(index){
+    musica.setAttribute('src', musicas[2].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[2].titulo;
+        nomeArtista.textContent = musicas[2].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
+function santo(index){
+    musica.setAttribute('src', musicas[3].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[3].titulo;
+        nomeArtista.textContent = musicas[3].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
+function acontece(index){
+    musica.setAttribute('src', musicas[4].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[4].titulo;
+        nomeArtista.textContent = musicas[4].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
+function voceMePerdeu(index){
+    musica.setAttribute('src', musicas[5].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[5].titulo;
+        nomeArtista.textContent = musicas[5].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
+function meninosEMeninas(index){
+    musica.setAttribute('src', musicas[6].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[6].titulo;
+        nomeArtista.textContent = musicas[6].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
+function coringa(index){
+    musica.setAttribute('src', musicas[7].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[7].titulo;
+        nomeArtista.textContent = musicas[7].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
+function doce(index){
+    musica.setAttribute('src', musicas[8].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[8].titulo;
+        nomeArtista.textContent = musicas[8].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
+function temposDeGloria(index){
+    musica.setAttribute('src', musicas[9].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[9].titulo;
+        nomeArtista.textContent = musicas[9].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
+function olhosVermelho(index){
+    musica.setAttribute('src', musicas[10].src);
+    musica.addEventListener('loadeddata', () => {
+        nomeMusica.textContent = musicas[10].titulo;
+        nomeArtista.textContent = musicas[10].artista;
+        imagem.src = musicas[index].img;
+        duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
+    });
+    tocarMusica()
+}
