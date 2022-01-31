@@ -104,12 +104,6 @@ function segundosParaMinutos(segundos){
 
     return campoMinutos+':'+campoSegundos;
 }
-
-
-let Conta = document.querySelector('.button-conta')
-
-Conta.addEventListener('click', verificarBotão)
-
 let menu = document.querySelector('.menu-conta') 
 
 function verificarBotão(){
