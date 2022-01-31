@@ -270,11 +270,6 @@ ul li{
 .content-2{
     display: flex;
 }
-.capa-menor{
-    border-radius: 50%;
-    width: 2%;
-    margin-right: 10px;
-}
 .jao{
     margin-right: 10px;
     font-weight: 600;
@@ -396,10 +391,10 @@ ul li{
     color: white;
 } 
 .music-player{
-    justify-content: space-between;
-    position:fixed;
     bottom: 0;
-    width: 84%;
+    position: fixed;
+    width:84vw;
+    justify-content: space-between;
     display: flex;
     background-color: black;
 }
@@ -551,14 +546,13 @@ progress{
     font-size: 45px;
 }
 .music-player{
-    position: fixed;
-    width:  100vw;
-    height: fit-content;
     justify-content: space-between;
+    width: 100vw;
 }
 .botoes-player{
     width: fit-content;
     margin-bottom: 0;
+    margin-right: 10px
 }
 .mp-p2{
     width: auto;
@@ -568,7 +562,7 @@ progress{
     display: none;
 }
 .div-bb{
-    padding-right: 10px;
+    padding-right: 20px;
 }
 .setinha{
     width: 5%;
