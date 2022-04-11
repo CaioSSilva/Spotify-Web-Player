@@ -214,7 +214,7 @@ function temposDeGloria(index){
     });
     tocarMusica()
 }
-function olhosVermelho(index){
+function olhosVermelhos(index){
     musica.setAttribute('src', musicas[10].src);
     musica.addEventListener('loadeddata', () => {
         nomeMusica.textContent = musicas[10].titulo;

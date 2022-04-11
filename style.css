@@ -504,6 +504,9 @@ progress{
 .list-musicas > ul:hover{
     background-color: #f8f8f83a ;
 }
+.div-list{
+    margin-bottom: 74px;
+}
 @media screen and (max-width:1100px) {
 .sec-menu{
     display: none;
